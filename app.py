@@ -52,4 +52,5 @@ def pdf(i):
 
 if __name__ == "__main__":
     print("Сайт: http://localhost:5000")
-    app.run(host="0.0.0.0", port=5000)
+    import os as _os
+    app.run(host="0.0.0.0", port=int(_os.environ.get("PORT", 5000)))
