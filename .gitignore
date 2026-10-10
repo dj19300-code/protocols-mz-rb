@@ -1,0 +1,18 @@
+# Не кладём PDF и базу — они воссоздаются скриптами
+clinical_protocols/
+protocols.db
+*.pdf
+!protocols_list.pdf
+
+# Служебное Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# VSCode
+.vscode/
+
+# Прочее
+.DS_Store
+*.log
